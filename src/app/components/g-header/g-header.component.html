@@ -1,0 +1,15 @@
+<div>
+    <header class="g-header">
+        <fa-icon [icon]="iBars" id="iBars" (click)="toggleSideBar()"></fa-icon>
+        <h2 id="title" (click)="toHome()">_Logo_</h2>
+        <div class="logout" (click)="logout()" [class]="logado ? 'enable' : 'disable' ">
+            <p><fa-icon [icon]="iLogout" id="iLogout"></fa-icon> Sign out </p>
+        </div>
+    </header>
+
+    <div [ngClass]="activedSideBar ? 'sidebarActived': 'blank'" class="sidebar">
+        <h2 class="menus"> LOGIN </h2>
+        <h2 class="menus"> HOME </h2>
+        
+    </div>
+</div>

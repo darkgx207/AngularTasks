@@ -1,0 +1,19 @@
+
+
+.g-button {
+    padding: 0.5rem;
+    background-color: #3376c4;
+    border-style: none;
+    color : #fff;
+
+    &:active { filter: brightness(1.5); }
+    &:disabled { background-color: rgb(72, 81, 97); }
+}
+
+// .g-button:active {
+//    filter: brightness(1.5);
+// }
+
+.g-button:hover {
+    background-color: #3b82d3;
+}
