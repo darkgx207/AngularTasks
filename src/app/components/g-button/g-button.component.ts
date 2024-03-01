@@ -9,4 +9,10 @@ import { Component, Input } from '@angular/core';
 })
 export class GButtonComponent {
   @Input() text!:string;
+  @Input() func:Function | undefined;
+
+
+  public handlerFunction():void {
+    if(this.func) { this.func(); }
+  }
 }

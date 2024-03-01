@@ -1,12 +1,13 @@
-<div class="container">
+<div class="content">
     <div class="card">
         <h5 style="margin-bottom: 20px;">Bem vindo, é necessário realizar o login/cadastro para utilizar a aplicação.</h5>
         <form>
-            <g-input  type="text" text="username" placeholder="username"/>
+            <g-input type="text" text="username" placeholder="username"/>
             <br>
-            <g-input  type="password" placeholder="password"/>
+            <g-input type="password" placeholder="password"/>
             <br>
             <g-button text="Login" />
         </form>
+        <g-button text="Register" [func]="x"/>
     </div>
 </div>
