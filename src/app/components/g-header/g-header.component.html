@@ -8,8 +8,7 @@
     </header>
 
     <div [ngClass]="activedSideBar ? 'sidebarActived': 'blank'" class="sidebar">
-        <h2 class="menus"> LOGIN </h2>
-        <h2 class="menus"> HOME </h2>
-        
+        <h2 class="menus" [routerLink]="'login'">LOGIN</h2>
+        <h2 class="menus" [routerLink]="''">HOME</h2>
     </div>
 </div>

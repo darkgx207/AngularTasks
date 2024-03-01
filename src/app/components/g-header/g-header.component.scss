@@ -60,7 +60,10 @@
     width: 0px;
     height: 100vh;
     transition: linear 0.2s;
-    
+    h2 {
+        visibility: hidden;
+        transition: 0.1s;
+    }
 }
 
 .menus {

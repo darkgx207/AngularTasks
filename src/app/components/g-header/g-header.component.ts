@@ -3,12 +3,13 @@ import { GButtonComponent } from '../g-button/g-button.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { IconDefinition, faBars, faDoorOpen, faSignOut } from '@fortawesome/free-solid-svg-icons';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
+
 
 @Component({
   selector: 'g-header',
   standalone: true,
-  imports: [GButtonComponent, FontAwesomeModule,CommonModule],
+  imports: [GButtonComponent, FontAwesomeModule,CommonModule, RouterModule],
   templateUrl: './g-header.component.html',
   styleUrl: './g-header.component.scss'
 })
@@ -21,7 +22,8 @@ export class GHeaderComponent {
   constructor(public router:Router) {  }
 
   public toggleSideBar() {
-    this.activedSideBar = !this.activedSideBar;  
+    this.activedSideBar = !this.activedSideBar;
+    
   }
 
   public toHome() { 
